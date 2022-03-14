@@ -5,11 +5,11 @@ import id.ac.ui.cs.advprog.tutorial4.core.util.RedeemCodeUtil;
 import java.util.Map;
 
 public class GenerateCodeFactory {
-    public String randomCode(String code) {
-        if (code.equals("")) {
+    public String randomCode(String customCode) {
+        if (customCode.equals("")) {
             return RedeemCodeUtil.generateCode();
         }
-        return code;
+        return customCode;
     }
 
     public RedeemCode generateCode(String itemType, String codeType, String code, String itemName, Map<String, String> data) {
