@@ -4,7 +4,7 @@
 
 Master branch status:
 [![pipeline status][pipeline-master]][commits-master]
-[![coverage report][coverage-master][commits-master]
+[![coverage report][coverage-master]][commits-master]
 <br>
 Development branch status:
 [![pipeline status][pipeline-dev]][commits-dev]
