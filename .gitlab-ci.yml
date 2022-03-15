@@ -23,7 +23,7 @@ test:
     - gradle check --stacktrace
     - gradle test --stacktrace
     - gradle jacocoTestReport
-    - cat  build/reports/jacoco/test/html/index.html
+    - cat build/reports/jacoco/test/html/index.html | grep -o '<tfoot>.*</tfoot>'
   artifacts:
     paths:
       - build/reports/jacoco/*
