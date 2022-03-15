@@ -18,6 +18,6 @@ public class CreateCodeServiceImpl implements CreateCodeService {
         GenerateCodeFactory generateCodeFactory = new GenerateCodeFactory();
         RedeemCode redeemCode = generateCodeFactory.generateCode(itemType, codeType, code, itemName, data);
         redeemCodeRepository.save(redeemCode);
-        return null;
+        return redeemCode;
     }
 }
